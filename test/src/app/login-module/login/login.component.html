@@ -1,0 +1,12 @@
+<div style="width: 100%; text-align: center;"> <h2> User Login Form </h2> </div> 
+<br>  
+    <form #myform="ngForm" (ngSubmit)="register(myform)">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" ngModel required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" ngModel required>  
+            <button type="submit">Login</button>   
+          
+        </div>   
+    </form>     

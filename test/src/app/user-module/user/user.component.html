@@ -1,0 +1,26 @@
+
+<h2  style="display: inline-block;">Users</h2>
+<button style="display: inline-block; float: right;" (click)="onClick()">Create User</button>
+
+<input type="text" id="myInput" (keyup)='myFunction()' placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th >Gender</th>
+    <th >Name</th>
+    <th >Email</th>
+    <th >Username</th>
+    <th >Password</th>
+    <th >DOB</th>
+    <th >Phone</th>
+  </tr>
+  <tr *ngFor="let users of userData">
+    <td>{{users.user.gender | uppercase}}</td>
+    <td>{{users.user.name.title | uppercase}}&nbsp;{{users.user.name.first | uppercase}}&nbsp;{{users.user.name.last | uppercase}}</td>
+     <td>{{users.user.email}}</td>
+     <td>{{users.user.username}}</td>
+     <td>{{users.user.password}}</td>
+     <td>{{users.user.dob | date}}</td>
+     <td>{{users.user.cell}}</td>
+  </tr>
+</table>
