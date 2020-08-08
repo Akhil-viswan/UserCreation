@@ -3,9 +3,9 @@
     <form #myform="ngForm" (ngSubmit)="register(myform)">  
         <div class="container">   
             <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" ngModel required>  
+            <input required type="text" placeholder="Enter Username" name="username" ngModel>  
             <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" ngModel required>  
+            <input required type="password" placeholder="Enter Password" name="password" ngModel>  
             <button type="submit">Login</button>   
           
         </div>   

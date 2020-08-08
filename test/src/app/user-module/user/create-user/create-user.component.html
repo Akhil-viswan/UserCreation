@@ -3,30 +3,30 @@
     <form #myform="ngForm" (ngSubmit)="register(myform)">  
         <div class="container">   
             <label>Username : </label>   
-            <input required type="text" placeholder="Enter Username" name="username" ngModel required> 
+            <input required type="text" placeholder="Enter Username" name="username" ngModel> 
             <label>Password : </label>   
-            <input required type="text" placeholder="Enter Password" name="password" ngModel required> 
+            <input required type="password" placeholder="Enter Password" name="password" ngModel> 
             <label>Gender : </label>   
-            <select placeholder="Select Gender" name="gender"  ngModel required>
+            <select placeholder="Select Gender" name="gender"  ngModel>
                 <option value="male">male</option>
                 <option value="female">female</option>
             </select>
             <label>title : </label>   
-            <select placeholder="Select title" name="title"  ngModel required>
+            <select placeholder="Select title" name="title"  ngModel>
                 <option value="Mr">Mr</option>
                 <option value="Miss">Miss</option>
                 <option value="Mrs">Mrs</option>
             </select>  
             <label>First Name : </label>   
-            <input required type="text" placeholder="First Name" name="fname" ngModel required>  
+            <input required type="text" placeholder="First Name" name="fname" ngModel>  
             <label>Last Name : </label>   
-            <input required type="text" placeholder="Last Name" name="lname" ngModel required> 
+            <input required type="text" placeholder="Last Name" name="lname" ngModel> 
             <label>Email : </label>   
-            <input required type="email" placeholder="Email" name="email" ngModel required> 
+            <input required type="email" placeholder="Email" name="email" ngModel> 
             <label>DOB : </label>   
-            <input required type="date" placeholder="DOB" name="dob" ngModel required> 
+            <input required type="date" placeholder="DOB" name="dob" ngModel> 
             <label>Phone : </label>   
-            <input required type="number" placeholder="phone" name="phone" ngModel required> 
+            <input required type="number" maxlength="10" placeholder="phone" name="phone" ngModel> 
             <button type="submit">Submit</button>   
           
         </div>   
